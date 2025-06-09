@@ -1,0 +1,10 @@
+apiVersion: skaffold/v3
+kind: Config
+build:
+  artifacts:
+    - image: gcr.io/project-khusus/sentiment-analysis-financial-news-api
+      docker:
+        dockerfile: Dockerfile
+deploy:
+  cloudrun: {}
+portForward: []
